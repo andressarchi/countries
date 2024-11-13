@@ -1,6 +1,6 @@
 .card-country {
-    width: 10rem;
-    height: 12rem;
+    width: 8rem;
+    height: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,7 +12,7 @@
   }
   
   .card-country:hover {
-    transform: scale(150%);  
+    transform: scale(125%);  
   }
   
   .card-country > img {
@@ -24,12 +24,18 @@
   .card-country > h2 {
     width: 100%;
     height: 50%;
+    font-size: 1rem;
     text-align: center;
     color: #fff;
     margin-top: 1.5rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-  
+  .countries-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .opacity-board {  
     opacity: 0.2;
     background-color: gray;
