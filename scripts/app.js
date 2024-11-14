@@ -19,6 +19,8 @@ const makeCountry = (country) => {
 };
 
 const renderCountries = (countryList) => {
+    const sectionCountry = document.getElementById("section-country");
+    sectionCountry.innerHTML = "";  
     countryList.forEach(country => makeCountry(country));
 };
 
@@ -58,12 +60,3 @@ const sortCountries = () => {
 document.getElementById("input-filter").addEventListener("input", search);
 document.getElementById("select-orderBy").addEventListener("change", sortCountries);
 window.addEventListener("DOMContentLoaded", () => renderCountries(countries));
-
-
-// function  displayCountries() {
-//     const countriesContainer = document.getElementById(`section-countries`);
-//     countriesContainer.innerHTML=``;
-//     countries.forEach(countries => {
-//         const countriesContainer= document.createElement
-//     });
-// }
